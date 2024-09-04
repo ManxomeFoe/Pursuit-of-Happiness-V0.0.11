@@ -1,0 +1,78 @@
+ideas = {
+
+	country = {
+		JAP_showa_emperor = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.15
+			}
+		}
+		
+		JAP_reluctant_modernization = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_industrial_complex_factor = -0.1
+				stability_factor = -0.10
+			}
+		}
+		
+		JAP_philippine_disaster = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = -0.10
+				stability_factor = -0.10
+				naval_speed_factor = -0.05
+				production_speed_dockyard_factor = -0.10
+			}
+		}
+		
+		JAP_trade_war = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.025
+				production_cost_max_convoy = 0.1
+			}
+		}
+	}
+}

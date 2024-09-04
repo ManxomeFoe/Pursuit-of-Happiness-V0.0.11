@@ -1,0 +1,98 @@
+ideas = {
+
+	country = {
+		CAL_armed_neutrality = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = = -0.50
+				political_power_gain = -0.30
+				production_speed_buildings_factor = -0.15
+				consumer_goods_factor = 0.15
+			}
+		}
+		
+		CAL_financial_uncertainty = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				training_time_factor = 0.10
+				army_org_factor = -0.10
+				army_attack_factor = -0.10
+				army_defense_factor = 0.05
+				army_morale_factor = -0.10
+			}
+		}
+		
+		CAL_great_pacific_game = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.005
+			}
+		}		
+		
+		CAL_colony_to_colonizer = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.005
+			}
+		}	
+	
+		CAL_racial_divides = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.005
+			}
+		}		
+
+	}
+}

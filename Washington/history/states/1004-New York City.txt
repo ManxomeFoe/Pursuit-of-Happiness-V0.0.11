@@ -1,0 +1,33 @@
+state={
+	id=1004
+	name="STATE_1004"
+	provinces={
+		706 859 3878 3894 6911 9774 
+	}
+	manpower=8588061
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
+
+	history={
+		owner = NEN
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 7
+			dockyard = 3
+			air_base = 10
+			3878 = {
+				naval_base = 6
+
+			}
+
+		}
+		add_core_of = NEN
+		victory_points = {
+			3878 30.0 
+		}
+
+	}
+
+}

@@ -1,0 +1,21 @@
+state={
+	id=985
+	name="STATE_985"
+	impassable = yes
+	provinces={
+		13257 
+	}
+	history={
+		owner = GER
+		add_core_of = GER
+		buildings = {
+			infrastructure = 0
+
+		}
+
+	}
+	manpower=2139
+	state_category=wasteland
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

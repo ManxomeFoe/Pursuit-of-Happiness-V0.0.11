@@ -1,0 +1,66 @@
+ideas = {
+
+	country = {
+		FRR_spirit_of_the_revolution = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = FRR_spirit_of_the_revolution
+			modifier = {
+				stability_factor = 0.25
+				war_support_factor = 0.5
+				conscription_factor = 1.0
+				army_speed_factor = 0.1
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				training_time_factor = -0.10
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		
+		FRR_death_before_surrender = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = FRR_death_before_surrender
+			modifier = {
+				surrender_limit = 0.9
+			}
+		}
+		
+		FRR_jacobin_plot = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = GER_failing_british_investments
+			modifier = {
+				stability_factor = -0.10
+				Marxism_drift = 0.1
+				Labourism_drift = 0.07
+				Socialism_drift = 0.05
+			}
+		}
+	}
+}

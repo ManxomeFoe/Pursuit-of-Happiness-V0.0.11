@@ -1,0 +1,43 @@
+ideas = {
+
+	country = {
+		ITA_confederation_member = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.10
+				conscription_factor = 0.10
+			}
+		}
+		
+		SIC_successful_revolution = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.20
+				war_support_factor = 0.50
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
+				conscription_factor = 0.15
+			}
+		}
+	}
+}

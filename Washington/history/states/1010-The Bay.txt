@@ -1,0 +1,43 @@
+state={
+	id=1010
+	name="STATE_1010"
+	provinces={
+		677 3677 3678 6681 6699 9671 9713 11658 
+	}
+	manpower=2677248
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+
+	history={
+		owner = CAL
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 5
+			dockyard = 2
+			air_base = 6
+			9671 = {
+				naval_base = 4
+
+			}
+
+		}
+		add_core_of = USA
+		victory_points = {
+			9671 25 
+		}
+		victory_points = {
+			9713 1 
+		}
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 7
+
+			}
+
+		}
+
+	}
+
+}

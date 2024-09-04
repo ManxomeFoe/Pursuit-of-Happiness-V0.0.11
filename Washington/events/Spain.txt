@@ -1,0 +1,16 @@
+﻿add_namespace = Spain
+
+news_event = {
+	id = Spain.9001
+	title = Spain.9001.t
+	desc = Spain.9001.d
+	picture = GFX_report_event_alfonso_coronation
+	major = yes
+
+	is_triggered_only = yes
+
+	option = { # A Glorious Day for Spain!
+		name = Spain.9001.a
+		}
+	}
+}

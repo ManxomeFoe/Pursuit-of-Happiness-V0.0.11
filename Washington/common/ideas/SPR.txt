@@ -1,0 +1,76 @@
+ideas = {
+
+	country = {
+		revanchismo = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = SPR_revanchismo
+			modifier = {
+				war_support_factor = 0.10
+				political_power_cost = -0.20
+			}
+		}
+		
+		golden_charter = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = SPR_golden_charter
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		
+		new_fueros_system = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = SPR_new_fueros_system
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = -0.10
+			}
+		}
+		
+		catalan_scheme = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = SPR_catalan_scheme
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+	}
+}

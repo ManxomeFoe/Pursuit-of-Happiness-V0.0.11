@@ -1,0 +1,22 @@
+GER_constitutional_convention_category = {
+	
+	GER_german_nationalism_question = {
+		
+		icon = GER_german_nationalism_question
+
+		available = {
+			has_country_flag = GER_constitutional_convention
+		}
+
+		complete_effect = {
+			country_event = { id = hours = 1 }
+		}
+	GER_federalist_question
+
+	GER_suffrage_question
+
+	GER_social_programs
+
+	GER_polish_representation
+
+	GER_constitutional_ratification

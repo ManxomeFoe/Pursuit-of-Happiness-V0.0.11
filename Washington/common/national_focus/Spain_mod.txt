@@ -1,0 +1,2123 @@
+focus_tree = {
+	id = spain
+	continuous_focus_position = { x = 150 y = 2870 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SPR
+		}
+	}
+	#Coalición Moderada
+	focus = {
+		id = SPR_coalicionmoderada
+		icon = GFX_goal_generic_major_alliance
+		x = 15
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_oppose_guerrism  }
+	}
+
+	#¡Viva la República!
+	focus = {
+		id = SPR_vivalarepublica
+		icon = GFX_focus_spr_maintain_the_republic
+		x = 18
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_abolish_the_monarchy  }
+	}
+
+	#Abolish the Monarchy
+	focus = {
+		id = SPR_abolish_the_monarchy
+		icon = GFX_focus_rom_abdicate
+		x = 18
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_investigate_royal_involvement  }
+		mutually_exclusive = { }
+	}
+
+	#Liberal Army Oath
+	focus = {
+		id = SPR_liberal_army_oath
+		icon = GFX_goal_generic_military_sphere
+		x = 14
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_standwithsenorazana  }
+	}
+
+	#Impartial Police Force
+	focus = {
+		id = SPR_impartial_police_force
+		icon = GFX_focus_eng_special_air_service
+		x = 16
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_standwithsenorazana  }
+	}
+
+	#Migrant Work Programs
+	focus = {
+		id = SPR_migrant_work_programs
+		icon = GFX_SPR_migrant_work_programs-446
+		x = 11
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_the_africano_proposal  }
+	}
+
+	#The Hispanic Union
+	focus = {
+		id = SPR_the_hispanic_union
+		icon = GFX_focus_generic_monarchy_2
+		x = 10
+		y = 13
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_spanish_citizenship_for_moroccans  } prerequisite = { focus = SPR_migrant_work_programs  }
+	}
+
+	#War Railroads
+	focus = {
+		id = SPR_war_railroads
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 0
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_formalize_the_conquistadors  }
+	}
+
+	#The San Diego Incident
+	focus = {
+		id = SPR_the_san_diego_incident
+		icon = GFX_focus_generic_combined_arms
+		x = 4
+		y = 17
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_looking_outward  }
+	}
+
+	#End the Portuguese Mistake
+	focus = {
+		id = SPR_end_the_portuguese_mistake
+		icon = GFX_focus_por_the_fifth_empire
+		x = 3
+		y = 18
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_the_san_diego_incident  }
+	}
+
+	#Moral Diplomacy
+	focus = {
+		id = SPR_moral_diplomacy
+		icon = GFX_SPR_moral_diplomacy-280
+		x = 7
+		y = 16
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_looking_outward  } prerequisite = { focus = SPR_die_for_the_emperor  }
+	}
+
+	#Ban Opposing Parties
+	focus = {
+		id = SPR_ban_opposing_parties
+		icon = GFX_SPR_ban_opposing_parties-280
+		x = 1
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_the_absolute_prime_minister  }
+	}
+
+	#Empower the Guardia Civil
+	focus = {
+		id = SPR_empower_the_guardia_civil
+		icon = GFX_focus_por_portuguese_legion
+		x = 3
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_the_absolute_prime_minister  }
+	}
+
+	#The New Order
+	focus = {
+		id = SPR_the_new_order
+		icon = GFX_focus_generic_monarchy_1
+		x = 2
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_ban_opposing_parties  } prerequisite = { focus = SPR_empower_the_guardia_civil  }
+	}
+
+	#Royal Promotion
+	focus = {
+		id = SPR_royal_promotion
+		icon = GFX_focus_generic_home_defense
+		x = 9
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Oppose Guerrism
+	focus = {
+		id = SPR_oppose_guerrism
+		icon = GFX_focus_generic_support_the_left_right
+		x = 15
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_royal_promotion  }
+	}
+
+	#Stick With the Axe
+	focus = {
+		id = SPR_stick_with_the_axe
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 4
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_royal_promotion  }
+		mutually_exclusive = { focus = SPR_oppose_guerrism  }
+	}
+
+	#A Guerrist Puppet
+	focus = {
+		id = SPR_a_guerrist_puppet
+		icon = GFX_focus_generic_self_management
+		x = 3
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_stick_with_the_axe  }
+	}
+
+	#A Guerrist Emperor
+	focus = {
+		id = SPR_a_guerrist_emperor
+		icon = GFX_focus_generic_monarchy_1
+		x = 5
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_stick_with_the_axe  }
+		mutually_exclusive = { focus = SPR_a_guerrist_puppet  }
+	}
+
+	#Investigate the Zarautz Villa
+	focus = {
+		id = SPR_investigate_the_zarautz_villa
+		icon = GFX_focus_GRE_a_land_of_mountains
+		x = 5
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_a_guerrist_emperor  }
+	}
+
+	#Arrest the Grand Council
+	focus = {
+		id = SPR_arrest_the_grand_council
+		icon = GFX_focus_BUL_bulgarisation_of_the_balkans
+		x = 5
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_investigate_the_zarautz_villa  }
+	}
+
+	#Convene the Grand Council
+	focus = {
+		id = SPR_convene_the_grand_council
+		icon = GFX_focus_generic_combined_arms
+		x = 3
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_a_guerrist_puppet  }
+	}
+
+	#Rally the Conquistadors
+	focus = {
+		id = SPR_rally_the_conquistadors
+		icon = GFX_focus_focus_fra_maquis
+		x = 3
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_convene_the_grand_council  }
+	}
+
+	#The Unrest Begins
+	focus = {
+		id = SPR_the_unrest_begins
+		icon = GFX_focus_generic_army_tanks2
+		x = 4
+		y = 5
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_arrest_the_grand_council  focus = SPR_rally_the_conquistadors  }
+	}
+
+	#Emergency Powers Act
+	focus = {
+		id = SPR_emergency_powers_act
+		icon = GFX_focus_generic_treaty
+		x = 4
+		y = 6
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_the_unrest_begins  }
+	}
+
+	#The Absolute Emperor
+	focus = {
+		id = SPR_the_absolute_emperor
+		icon = GFX_goal_anschluss
+		x = 7
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_emergency_powers_act  }
+	}
+
+	#The Absolute Prime Minister
+	focus = {
+		id = SPR_the_absolute_prime_minister
+		icon = GFX_goal_generic_political_pressure
+		x = 2
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_emergency_powers_act  }
+	}
+
+	#Control the Cortes
+	focus = {
+		id = SPR_control_the_cortes
+		icon = GFX_focus_usa_voter_registration_act
+		x = 6
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_the_absolute_emperor  }
+	}
+
+	#Reform the Guerrista Party
+	focus = {
+		id = SPR_reform_the_guerrista_party
+		icon = GFX_focus_eng_organise_the_blackshirts
+		x = 7
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_the_absolute_emperor  }
+	}
+
+	#The Praetorian Guard
+	focus = {
+		id = SPR_the_praetorian_guard
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		x = 8
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = SPR_the_absolute_emperor  }
+	}
+
+	#The New Spain
+	focus = {
+		id = SPR_the_new_spain
+		icon = GFX_SPR_the_new_spain-92
+		x = 7
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_control_the_cortes  } prerequisite = { focus = SPR_reform_the_guerrista_party  } prerequisite = { focus = SPR_the_praetorian_guard  }
+	}
+
+	#Carreteralfonso
+	focus = {
+		id = SPR_carreteralfonso
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 8
+		y = 10
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SPR_the_new_spain  }
+	}
+
+	#The Guerrist Philosophy
+	focus = {
+		id = SPR_the_guerrist_philosophy
+		icon = GFX_focus_chi_army_reform
+		x = 4
+		y = 11
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_alfonsosfactories  focus = SPR_carreteralfonso  focus = SPR_the_new_order  }
+	}
+
+	#Alfonso's Factories
+	focus = {
+		id = SPR_alfonsosfactories
+		icon = GFX_focus_generic_industry_1
+		x = 6
+		y = 10
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_the_new_spain  }
+		mutually_exclusive = { focus = SPR_carreteralfonso  }
+	}
+
+	#To Die for an Idea
+	focus = {
+		id = SPR_to_die_for_an_idea
+		icon = GFX_focus_generic_manpower
+		x = 4
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = SPR_the_guerrist_philosophy  }
+	}
+
+	#Army Blessed by God
+	focus = {
+		id = SPR_army_blessed_by_god
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		x = 7
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = SPR_the_new_spain  } prerequisite = { focus = SPR_the_guerrist_philosophy  }
+	}
+
+	#Formalize the Conquistadors
+	focus = {
+		id = SPR_formalize_the_conquistadors
+		icon = GFX_SPR_formalize_the_conquistadors-505544
+		x = 1
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = SPR_the_guerrist_philosophy  focus = SPR_the_new_order  }
+	}
+
+	#Might Makes Right
+	focus = {
+		id = SPR_might_makes_right
+		icon = GFX_SPR_might_makes_right-59
+		x = 4
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = SPR_to_die_for_an_idea  }
+	}
+
+	#Imperialist Realism
+	focus = {
+		id = SPR_imperialist_realism
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 4
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = SPR_might_makes_right  }
+	}
+
+	#Unity Through Force
+	focus = {
+		id = SPR_unity_through_force
+		icon = GFX_focus_generic_little_entente
+		x = 5
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = SPR_might_makes_right  }
+	}
+
+	#Labor Cult
+	focus = {
+		id = SPR_labor_cult
+		icon = GFX_focus_BUL_destroy_the_zveno
+		x = 3
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = SPR_might_makes_right  }
+	}
+
+	#Looking Outward
+	focus = {
+		id = SPR_looking_outward
+		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		x = 4
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_imperialist_realism  } prerequisite = { focus = SPR_unity_through_force  } prerequisite = { focus = SPR_labor_cult  }
+	}
+
+	#Economic Restructuring
+	focus = {
+		id = SPR_economic_restructuring
+		icon = GFX_focus_hol_abandon_the_gold_standard
+		x = 28
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Develop Our Realm
+	focus = {
+		id = SPR_develop_our_realm
+		icon = GFX_goal_generic_construction
+		x = 33
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_economic_restructuring  }
+	}
+
+	#Imperial Development
+	focus = {
+		id = SPR_imperial_development
+		icon = GFX_goal_continuous_increase_nu
+		x = 28
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_economic_restructuring  }
+	}
+
+	#Invest in New Spain
+	focus = {
+		id = SPR_invest_in_new_spain
+		icon = GFX_goal_generic_consumer_goods
+		x = 28
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_imperial_development  }
+	}
+
+	#Made in Spain Project
+	focus = {
+		id = SPR_made_in_spain_project
+		icon = GFX_focus_generic_industry_3
+		x = 24
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_economic_restructuring  }
+		mutually_exclusive = { focus = SPR_imperial_development  }
+	}
+
+	#Develop Asturian Steel
+	focus = {
+		id = SPR_develop_asturian_steel
+		icon = GFX_focus_generic_steel
+		x = 31
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_develop_our_realm  }
+	}
+
+	#Catalan Investments
+	focus = {
+		id = SPR_catalan_investments
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 32
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_develop_our_realm  }
+	}
+
+	#Invest in New Toledo
+	focus = {
+		id = SPR_invest_in_new_toledo
+		icon = GFX_goal_generic_consumer_goods
+		x = 27
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_imperial_development  }
+	}
+
+	#Invest in Tejas
+	focus = {
+		id = SPR_invest_in_tejas
+		icon = GFX_goal_generic_consumer_goods
+		x = 26
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_imperial_development  }
+	}
+
+	#Invest in Sonora
+	focus = {
+		id = SPR_invest_in_sonora
+		icon = GFX_goal_generic_consumer_goods
+		x = 30
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_imperial_development  }
+	}
+
+	#Invest in New Granada
+	focus = {
+		id = SPR_invest_in_new_granada
+		icon = GFX_goal_generic_consumer_goods
+		x = 29
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_imperial_development  }
+	}
+
+	#African Development
+	focus = {
+		id = SPR_african_development
+		icon = GFX_focus_generic_africa_factory
+		x = 22
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_economic_restructuring  }
+	}
+
+	#Aluminum of Cameroon
+	focus = {
+		id = SPR_aluminum_of_cameroon
+		icon = GFX_focus_generic_aluminum
+		x = 21
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_african_development  }
+	}
+
+	#Workshop of the Empire
+	focus = {
+		id = SPR_workshop_of_the_empire
+		icon = GFX_focus_generic_industry_3
+		x = 24
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_made_in_spain_project  } prerequisite = { focus = SPR_urbanization  } prerequisite = { focus = SPR_toulon_of_africa  }
+	}
+
+	#Imperial Research Board
+	focus = {
+		id = SPR_imperial_research_board
+		icon = GFX_goal_continuous_research
+		x = 28
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SPR_invest_in_new_spain  } prerequisite = { focus = SPR_invest_in_new_toledo  } prerequisite = { focus = SPR_invest_in_new_granada  } prerequisite = { focus = SPR_invest_in_tejas  } prerequisite = { focus = SPR_invest_in_sonora  }
+	}
+
+	#Cuban Resources
+	focus = {
+		id = SPR_cuban_resources
+		icon = GFX_goal_generic_construction2
+		x = 33
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_develop_our_realm  }
+	}
+
+	#Metropolitan Infrastructure
+	focus = {
+		id = SPR_metropolitan_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 34
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_develop_our_realm  }
+	}
+
+	#Royal Factories
+	focus = {
+		id = SPR_royal_factories
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 35
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_develop_our_realm  }
+	}
+
+	#Armory of Toledo
+	focus = {
+		id = SPR_armory_of_toledo
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 35
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_royal_factories  }
+	}
+
+	#Ferrocarril de África Occidental
+	focus = {
+		id = SPR_ferrocarrildeafricaoccidental
+		icon = GFX_focus_generic_africa_infrastructure
+		x = 22
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_african_development  }
+	}
+
+	#Rubber Plantations
+	focus = {
+		id = SPR_rubber_plantations
+		icon = GFX_focus_generic_rubber
+		x = 23
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_african_development  }
+	}
+
+	#Urbanization
+	focus = {
+		id = SPR_urbanization
+		icon = GFX_goal_generic_fortify_city
+		x = 33
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_develop_asturian_steel  } prerequisite = { focus = SPR_catalan_investments  } prerequisite = { focus = SPR_cuban_resources  } prerequisite = { focus = SPR_metropolitan_infrastructure  } prerequisite = { focus = SPR_armory_of_toledo  }
+	}
+
+	#Toulon of Africa
+	focus = {
+		id = SPR_toulon_of_africa
+		icon = GFX_focus_generic_africa_naval
+		x = 22
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_aluminum_of_cameroon  } prerequisite = { focus = SPR_ferrocarrildeafricaoccidental  } prerequisite = { focus = SPR_rubber_plantations  }
+	}
+
+	#Industrial Empire
+	focus = {
+		id = SPR_industrial_empire
+		icon = GFX_goal_continuous_repairments
+		x = 28
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_imperial_research_board  } prerequisite = { focus = SPR_urbanization  }
+	}
+
+	#Catholic Alliance
+	focus = {
+		id = SPR_catholic_alliance
+		icon = GFX_focus_por_concordat
+		x = 8
+		y = 17
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_moral_diplomacy  }
+	}
+
+	#Righteous Guarantees for Soldiers
+	focus = {
+		id = SPR_righteous_guarantees_for_soldiers
+		icon = GFX_SPR_righteous_guarantees_for_soldiers-505961
+		x = 7
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = SPR_army_blessed_by_god  }
+	}
+
+	#Die for the Emperor
+	focus = {
+		id = SPR_die_for_the_emperor
+		icon = GFX_focus_spa_no_compromise_on_carlist_ideals
+		x = 7
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_righteous_guarantees_for_soldiers  }
+	}
+
+	#Retake our Islands
+	focus = {
+		id = SPR_retake_our_islands
+		icon = GFX_focus_hol_prepare_the_inundation_lines
+		x = 5
+		y = 18
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_the_san_diego_incident  }
+	}
+
+	#The Spanish Channel
+	focus = {
+		id = SPR_the_spanish_channel
+		icon = GFX_focus_hol_gateway_to_europe
+		x = 4
+		y = 18
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_the_san_diego_incident  }
+	}
+
+	#Nuestro Mar
+	focus = {
+		id = SPR_nuestro_mar
+		icon = GFX_focus_generic_destroyer
+		x = 4
+		y = 19
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_end_the_portuguese_mistake  } prerequisite = { focus = SPR_retake_our_islands  } prerequisite = { focus = SPR_the_spanish_channel  }
+	}
+
+	#The Sun Never Sets
+	focus = {
+		id = SPR_the_sun_never_sets
+		icon = GFX_focus_spa_the_phalanx_ascendant
+		x = 4
+		y = 20
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_nuestro_mar  }
+	}
+
+	#Restore the Kingdom
+	focus = {
+		id = SPR_restore_the_kingdom
+		icon = GFX_focus_por_the_kingdom_reunited
+		x = 2
+		y = 19
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_end_the_portuguese_mistake  }
+	}
+
+	#The Hidden Armaments
+	focus = {
+		id = SPR_the_hidden_armaments
+		icon = GFX_goal_generic_army_tanks
+		x = 2
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_formalize_the_conquistadors  }
+	}
+
+	#Unite the Faith
+	focus = {
+		id = SPR_unite_the_faith
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		x = 6
+		y = 17
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_moral_diplomacy  }
+		mutually_exclusive = { focus = SPR_catholic_alliance  }
+	}
+
+	#The Caudillo
+	focus = {
+		id = SPR_the_caudillo
+		icon = GFX_goal_continuous_suppression
+		x = 1
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_the_hidden_armaments  } prerequisite = { focus = SPR_war_railroads  }
+	}
+
+	#Synthetic Oil Experimentation
+	focus = {
+		id = SPR_synthetic_oil_experimentation
+		icon = GFX_goal_generic_oil_refinery
+		x = 35
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_armory_of_toledo  }
+	}
+
+	#Moción de Censura
+	focus = {
+		id = SPR_mociondecensura
+		icon = GFX_focus_generic_concessions
+		x = 15
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_coalicionmoderada  }
+	}
+
+	#Stand with Señor Azaña
+	focus = {
+		id = SPR_standwithsenorazana
+		icon = GFX_SPR_standwithsenorazana-427
+		x = 15
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_mociondecensura  }
+		mutually_exclusive = { }
+	}
+
+	#The Africano Proposal
+	focus = {
+		id = SPR_the_africano_proposal
+		icon = GFX_focus_intervention_spain_nationalists
+		x = 10
+		y = 10
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_standwithsenorazana  focus = SPR_the_new_spain  }
+	}
+
+	#Spanish Citizenship for Moroccans
+	focus = {
+		id = SPR_spanish_citizenship_for_moroccans
+		icon = GFX_SPR_spanish_citizenship_for_moroccans-270
+		x = 9
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_the_africano_proposal  }
+	}
+
+	#Raid the Grand Council
+	focus = {
+		id = SPR_raid_the_grand_council
+		icon = GFX_focus_prc_infiltration
+		x = 15
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_liberal_army_oath  } prerequisite = { focus = SPR_impartial_police_force  }
+	}
+
+	#The Guerrista Trial
+	focus = {
+		id = SPR_the_guerrista_trial
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 15
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_raid_the_grand_council  }
+	}
+
+	#Investigate Royal Involvement
+	focus = {
+		id = SPR_investigate_royal_involvement
+		icon = GFX_focus_rom_handle_king
+		x = 15
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_the_guerrista_trial  }
+	}
+
+	#Abolish the Aristocracy
+	focus = {
+		id = SPR_abolish_the_aristocracy
+		icon = GFX_focus_rom_parties_end
+		x = 27
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_suspend_elections_indefinitely  }
+	}
+
+	#Examine the Army
+	focus = {
+		id = SPR_examine_the_army
+		icon = GFX_focus_generic_manpower
+		x = 30
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+	}
+
+	#Libertad, Igualdad, Fraternidad
+	focus = {
+		id = SPR_libertadigualdadfraternidad
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 17
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_go_with_manuel  }
+	}
+
+	#¡Libertad!
+	focus = {
+		id = SPR_libertad
+		icon = GFX_SPR_libertad-88
+		x = 15
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_vivalarepublica  }
+	}
+
+	#Le Roja Espada
+	focus = {
+		id = SPR_le_roja_espada
+		icon = GFX_focus_generic_join_comintern
+		x = 30
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Go With Niceto!
+	focus = {
+		id = SPR_gowithniceto
+		icon = GFX_goal_generic_demand_territory
+		x = 21
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_first_elections  }
+	}
+
+	#Constitutional Convention
+	focus = {
+		id = SPR_constitutional_convention
+		icon = GFX_SPR_constitutional_convention-270
+		x = 18
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_vivalarepublica  }
+	}
+
+	#First Elections
+	focus = {
+		id = SPR_first_elections
+		icon = GFX_SPR_first_elections-262103
+		x = 18
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_constitutional_convention  }
+	}
+
+	#Go with Manuel
+	focus = {
+		id = SPR_go_with_manuel
+		icon = GFX_SPR_go_with_manuel-427
+		x = 17
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_first_elections  }
+		mutually_exclusive = { focus = SPR_gowithniceto  }
+	}
+
+	#Tax Reform
+	focus = {
+		id = SPR_tax_reform
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 19
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_libertadigualdadfraternidad  focus = SPR_orden_y_progreso  }
+	}
+
+	#Disband the Army
+	focus = {
+		id = SPR_disband_the_army
+		icon = GFX_goal_generic_army_artillery
+		x = 29
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = SPR_le_roja_espada  }
+	}
+
+	#The Secular State
+	focus = {
+		id = SPR_the_secular_state
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		x = 15
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_libertadigualdadfraternidad  }
+	}
+
+	#Corporate Regulations
+	focus = {
+		id = SPR_corporate_regulations
+		icon = GFX_goal_generic_consumer_goods
+		x = 17
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_libertadigualdadfraternidad  }
+	}
+
+	#Tax the Church
+	focus = {
+		id = SPR_tax_the_church
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		x = 15
+		y = 16
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_the_secular_state  }
+	}
+
+	#Abolish the Gold Standard
+	focus = {
+		id = SPR_abolish_the_gold_standard
+		icon = GFX_focus_hol_abandon_the_gold_standard
+		x = 19
+		y = 16
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_tax_reform  }
+	}
+
+	#Labor Laws
+	focus = {
+		id = SPR_labor_laws
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 17
+		y = 16
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_corporate_regulations  }
+	}
+
+	#Spanish Middle Class
+	focus = {
+		id = SPR_spanish_middle_class
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		x = 17
+		y = 17
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_tax_the_church  } prerequisite = { focus = SPR_abolish_the_gold_standard  } prerequisite = { focus = SPR_labor_laws  }
+	}
+
+	#Orden y Progreso
+	focus = {
+		id = SPR_orden_y_progreso
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 21
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_gowithniceto  }
+	}
+
+	#Moral Law
+	focus = {
+		id = SPR_moral_law
+		icon = GFX_focus_por_concordat
+		x = 21
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_orden_y_progreso  }
+	}
+
+	#Private Religion
+	focus = {
+		id = SPR_private_religion
+		icon = GFX_goal_tripartite_pact
+		x = 21
+		y = 16
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_moral_law  }
+	}
+
+	#Cut the Red Tape
+	focus = {
+		id = SPR_cut_the_red_tape
+		icon = GFX_goal_generic_construct_civilian
+		x = 23
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_orden_y_progreso  }
+	}
+
+	#Natalismo
+	focus = {
+		id = SPR_natalismo
+		icon = GFX_goal_generic_national_unity
+		x = 3
+		y = 16
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_labor_cult  }
+	}
+
+	#Déjalo Ser
+	focus = {
+		id = SPR_dejaloser
+		icon = GFX_focus_generic_industry_1
+		x = 23
+		y = 16
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_cut_the_red_tape  }
+	}
+
+	#Spanish Economic Miracle
+	focus = {
+		id = SPR_spanish_economic_miracle
+		icon = GFX_focus_spa_the_spanish_miracle
+		x = 21
+		y = 17
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_abolish_the_gold_standard  } prerequisite = { focus = SPR_private_religion  } prerequisite = { focus = SPR_dejaloser  }
+	}
+
+	#Out Into the World
+	focus = {
+		id = SPR_out_into_the_world
+		icon = GFX_goal_generic_alliance
+		x = 19
+		y = 18
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_spanish_economic_miracle  focus = SPR_spanish_middle_class  }
+	}
+
+	#Democratize Colonial Governments
+	focus = {
+		id = SPR_democratize_colonial_governments
+		icon = GFX_SPR_democratize_colonial_governments-231
+		x = 19
+		y = 20
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_out_into_the_world  }
+	}
+
+	#Befriend the Portuguese
+	focus = {
+		id = SPR_befriend_the_portuguese
+		icon = GFX_SPR_befriend_the_portuguese-507939
+		x = 17
+		y = 19
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_out_into_the_world  }
+	}
+
+	#Destroy Portugal
+	focus = {
+		id = SPR_destroy_portugal
+		icon = GFX_focus_por_the_fifth_empire
+		x = 15
+		y = 19
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_out_into_the_world  }
+		mutually_exclusive = { focus = SPR_befriend_the_portuguese  }
+	}
+
+	#Liberate the Californios
+	focus = {
+		id = SPR_liberate_the_californios
+		icon = GFX_focus_BUL_bulgarisation_of_the_balkans
+		x = 16
+		y = 20
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_destroy_portugal  focus = SPR_befriend_the_portuguese  }
+	}
+
+	#Liberate the Argentine Loyalists
+	focus = {
+		id = SPR_liberate_the_argentine_loyalists
+		icon = GFX_focus_por_recover_latin_america
+		x = 16
+		y = 21
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_liberate_the_californios  }
+	}
+
+	#Liberate the Yankees
+	focus = {
+		id = SPR_liberate_the_yankees
+		icon = GFX_focus_RAJ_clamp_down_on_corruption
+		x = 16
+		y = 22
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_liberate_the_argentine_loyalists  }
+	}
+
+	#End the Rump Monarchy
+	focus = {
+		id = SPR_end_the_rump_monarchy
+		icon = GFX_SPR_end_the_rump_monarchy-251
+		x = 18
+		y = 20
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_befriend_the_portuguese  }
+	}
+
+	#Republican Interventionism
+	focus = {
+		id = SPR_republican_interventionism
+		icon = GFX_focus_generic_little_entente
+		x = 21
+		y = 19
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_out_into_the_world  }
+	}
+
+	#Overthrow Tarquinius Superbus
+	focus = {
+		id = SPR_overthrow_tarquinius_superbus
+		icon = GFX_focus_generic_adriatic_sea_focus
+		x = 23
+		y = 19
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_out_into_the_world  }
+	}
+
+	#Liberty Battalions
+	focus = {
+		id = SPR_liberty_battalions
+		icon = GFX_focus_generic_manpower
+		x = 22
+		y = 20
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_republican_interventionism  } prerequisite = { focus = SPR_overthrow_tarquinius_superbus  }
+	}
+
+	#Castilian Liberation Militias
+	focus = {
+		id = SPR_castilian_liberation_militias
+		icon = GFX_SPR_castilian_liberation_militias-262099
+		x = 30
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = SPR_le_roja_espada  }
+	}
+
+	#Disband the Guardia Civil
+	focus = {
+		id = SPR_disband_the_guardia_civil
+		icon = GFX_focus_BUL_bulgarisation_of_the_balkans
+		x = 31
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_le_roja_espada  }
+	}
+
+	#Suspend Elections Indefinitely
+	focus = {
+		id = SPR_suspend_elections_indefinitely
+		icon = GFX_focus_usa_voter_registration_act
+		x = 30
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_castilian_liberation_militias  } prerequisite = { focus = SPR_disband_the_army  } prerequisite = { focus = SPR_disband_the_guardia_civil  }
+	}
+
+	#Destroy the Bourgeoisie
+	focus = {
+		id = SPR_destroy_the_bourgeoisie
+		icon = GFX_focus_eng_crush_the_dream
+		x = 33
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_suspend_elections_indefinitely  }
+	}
+
+	#The Red Army
+	focus = {
+		id = SPR_the_red_army
+		icon = GFX_SPR_the_red_army-262089
+		x = 30
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = SPR_suspend_elections_indefinitely  }
+	}
+
+	#Nationalize the Industry
+	focus = {
+		id = SPR_nationalize_the_industry
+		icon = GFX_SPR_nationalize_the_industry-262103
+		x = 32
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_destroy_the_bourgeoisie  }
+	}
+
+	#Central Planning
+	focus = {
+		id = SPR_central_planning
+		icon = GFX_SPR_central_planning-262097
+		x = 32
+		y = 16
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_nationalize_the_industry  }
+	}
+
+	#State-Mandated Unions
+	focus = {
+		id = SPR_statemandated_unions
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 34
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_destroy_the_bourgeoisie  }
+	}
+
+	#Standardize Production
+	focus = {
+		id = SPR_standardize_production
+		icon = GFX_goal_generic_construction
+		x = 34
+		y = 16
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_statemandated_unions  }
+	}
+
+	#Three Year Plan
+	focus = {
+		id = SPR_three_year_plan
+		icon = GFX_goal_generic_soviet_construction
+		x = 33
+		y = 19
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_central_planning  } prerequisite = { focus = SPR_standardize_production  }
+	}
+
+	#Seizure of Farmland
+	focus = {
+		id = SPR_seizure_of_farmland
+		icon = GFX_focus_BUL_destroy_the_zveno
+		x = 26
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_abolish_the_aristocracy  }
+	}
+
+	#Set up the Communes
+	focus = {
+		id = SPR_set_up_the_communes
+		icon = GFX_focus_generic_treaty
+		x = 26
+		y = 16
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_seizure_of_farmland  }
+	}
+
+	#Modernize Farming Methods
+	focus = {
+		id = SPR_modernize_farming_methods
+		icon = GFX_goal_generic_position_armies
+		x = 28
+		y = 16
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_abolish_the_aristocracy  }
+	}
+
+	#Finalize Land Reform
+	focus = {
+		id = SPR_finalize_land_reform
+		icon = GFX_focus_BUL_the_fatherland_front
+		x = 27
+		y = 19
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_set_up_the_communes  } prerequisite = { focus = SPR_modernize_farming_methods  }
+	}
+
+	#Defend the Revolution
+	focus = {
+		id = SPR_defend_the_revolution
+		icon = GFX_SPR_defend_the_revolution-262122
+		x = 30
+		y = 16
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = SPR_the_red_army  }
+	}
+
+	#Guns of the Proletariat
+	focus = {
+		id = SPR_guns_of_the_proletariat
+		icon = GFX_SPR_guns_of_the_proletariat-262126
+		x = 29
+		y = 17
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_defend_the_revolution  }
+	}
+
+	#Fields to the Frontlines
+	focus = {
+		id = SPR_fields_to_the_frontlines
+		icon = GFX_SPR_fields_to_the_frontlines-262129
+		x = 31
+		y = 17
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = SPR_defend_the_revolution  }
+	}
+
+	#Red Interventionism
+	focus = {
+		id = SPR_red_interventionism
+		icon = GFX_SPR_red_interventionism-262127
+		x = 30
+		y = 18
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = SPR_guns_of_the_proletariat  } prerequisite = { focus = SPR_fields_to_the_frontlines  }
+	}
+
+	#Proclaim the Workers' Republic
+	focus = {
+		id = SPR_proclaimtheworkersrepublic
+		icon = GFX_SPR_proclaimtheworkersrepublic-262130
+		x = 30
+		y = 20
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_three_year_plan  } prerequisite = { focus = SPR_finalize_land_reform  }
+	}
+
+	#Partido Vanguardia
+	focus = {
+		id = SPR_partido_vanguardia
+		icon = GFX_SPR_partido_vanguardia-262102
+		x = 29
+		y = 21
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_proclaimtheworkersrepublic  }
+	}
+
+	#The People are the State
+	focus = {
+		id = SPR_the_people_are_the_state
+		icon = GFX_goal_generic_war_with_comintern
+		x = 31
+		y = 21
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_proclaimtheworkersrepublic  }
+	}
+
+	#New Military Research
+	focus = {
+		id = SPR_new_military_research
+		icon = GFX_focus_research
+		x = 35
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SPR_general_mobilization_plan  }
+	}
+
+	#Spanish Special Forces
+	focus = {
+		id = SPR_spanish_special_forces
+		icon = GFX_goal_generic_special_forces
+		x = 32
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SPR_examine_the_army  }
+	}
+
+	#Small Arms Focus
+	focus = {
+		id = SPR_small_arms_focus
+		icon = GFX_goal_generic_small_arms
+		x = 28
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_guerragilidad  } prerequisite = { focus = SPR_the_light_lockars  }
+	}
+
+	#Experimental Warfare
+	focus = {
+		id = SPR_experimental_warfare
+		icon = GFX_focus_secret_rearmament
+		x = 30
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SPR_examine_the_army  }
+	}
+
+	#Madrid Lockarette Institute
+	focus = {
+		id = SPR_madrid_lockarette_institute
+		icon = GFX_goal_generic_army_tanks
+		x = 26
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SPR_examine_the_army  }
+	}
+
+	#Guerragilidad
+	focus = {
+		id = SPR_guerragilidad
+		icon = GFX_goal_generic_army_motorized
+		x = 31
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SPR_experimental_warfare  }
+	}
+
+	#Storm War
+	focus = {
+		id = SPR_storm_war
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 29
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SPR_experimental_warfare  }
+		mutually_exclusive = { focus = SPR_guerragilidad  }
+	}
+
+	#The Light Lockars
+	focus = {
+		id = SPR_the_light_lockars
+		icon = GFX_focus_generic_army_tanks2
+		x = 25
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_madrid_lockarette_institute  }
+	}
+
+	#Medium Lockars
+	focus = {
+		id = SPR_medium_lockars
+		icon = GFX_focus_generic_license_production
+		x = 27
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SPR_madrid_lockarette_institute  }
+		mutually_exclusive = { focus = SPR_the_light_lockars  }
+	}
+
+	#Promote Consumer Austerity
+	focus = {
+		id = SPR_promote_consumer_austerity
+		icon = GFX_focus_BUL_bulgarisation_of_the_balkans
+		x = 34
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_examine_the_army  }
+	}
+
+	#Prioritize Artillery Production
+	focus = {
+		id = SPR_prioritize_artillery_production
+		icon = GFX_goal_generic_army_artillery2
+		x = 28
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_storm_war  } prerequisite = { focus = SPR_medium_lockars  }
+	}
+
+	#Motorized Production
+	focus = {
+		id = SPR_motorized_production
+		icon = GFX_focus_NZL_bob_semple_tank
+		x = 31
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_guerragilidad  }
+	}
+
+	#General Mobilization Plan
+	focus = {
+		id = SPR_general_mobilization_plan
+		icon = GFX_goal_generic_national_unity
+		x = 34
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = SPR_promote_consumer_austerity  }
+	}
+
+	#New Munitions Plants
+	focus = {
+		id = SPR_new_munitions_plants
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 33
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SPR_general_mobilization_plan  }
+	}
+
+	#The Azure Airforce
+	focus = {
+		id = SPR_the_azure_airforce
+		icon = GFX_goal_generic_air_fighter
+		x = 43
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+
+	#Refute la Leyenda Negra
+	focus = {
+		id = SPR_refute_la_leyenda_negra
+		icon = GFX_focus_spr_maintain_the_republic
+		x = 10
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_the_hispanic_union  }
+	}
+
+	#Reconquista
+	focus = {
+		id = SPR_reconquista
+		icon = GFX_SPR_reconquista-301
+		x = 30
+		y = 22
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SPR_partido_vanguardia  } prerequisite = { focus = SPR_the_people_are_the_state  }
+	}
+
+	#The España
+	focus = {
+		id = SPR_theespana
+		icon = GFX_SPR_theespana-645955
+		x = 45
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SPR_the_blue_sea_doctrine  }
+	}
+
+	#The Spanish Navy
+	focus = {
+		id = SPR_the_spanish_navy
+		icon = GFX_focus_generic_navy_battleship2
+		x = 43
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+
+	#Pioneers of the Submarine
+	focus = {
+		id = SPR_pioneers_of_the_submarine
+		icon = GFX_goal_generic_navy_anti_submarine
+		x = 40
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SPR_the_spanish_navy  }
+	}
+
+	#The Blue Sea Doctrine
+	focus = {
+		id = SPR_the_blue_sea_doctrine
+		icon = GFX_SPR_the_blue_sea_doctrine-645516
+		x = 46
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SPR_the_spanish_navy  }
+		mutually_exclusive = { focus = SPR_pioneers_of_the_submarine  }
+	}
+
+}

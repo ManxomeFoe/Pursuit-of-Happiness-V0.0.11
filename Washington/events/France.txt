@@ -1,0 +1,364 @@
+add_namespace = frevolution
+add_namespace = france_prewar_news
+
+country_event = {
+	id = frevolution.69
+	title = frevolution.69.t
+	desc = frevolution.69.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		1 = { transfer_state_to = FRR }
+		8 = { transfer_state_to = FRR }
+		15 = { transfer_state_to = FRR }
+		18 = { transfer_state_to = FRR }
+		19 = { transfer_state_to = FRR }
+		21 = { transfer_state_to = FRR }
+		29 = { transfer_state_to = FRR }
+		32 = { transfer_state_to = FRR }
+		34 = { transfer_state_to = FRR }
+		735 = { transfer_state_to = FRR }
+		785 = { transfer_state_to = FRR }
+		851 = { transfer_state_to = FRR }
+		909 = { transfer_state_to = FRR }
+		17 = { transfer_state_to = FRR }
+		28 = { transfer_state_to = FRR }
+		1014 = { transfer_state_to = FRR }
+		FRR = {
+			add_state_core = 1
+			add_state_core = 8
+			add_state_core = 15
+			add_state_core = 18
+			add_state_core = 19
+			add_state_core = 21
+			add_state_core = 29
+			add_state_core = 32
+			add_state_core = 34
+			add_state_core = 735
+			add_state_core = 738
+			add_state_core = 785
+			add_state_core = 851
+			add_state_core = 909
+			add_state_core = 17
+			add_state_core = 28
+			add_state_core = 1014
+		}
+		release = FIT
+		release = RHI
+		FRA = {
+			delete_unit_template_and_units = { division_template = "Division d'Infanterie" }
+			delete_unit_template_and_units = { division_template = "Division Coloniale" }
+			delete_unit_template_and_units = { division_template = "Division d'Infanterie Motorisée" }
+			delete_unit_template_and_units = { division_template = "Division d'Infanterie Alpine" }
+			delete_unit_template_and_units = { division_template = "Division de Cavalerie" }
+			delete_unit_template_and_units = { division_template = "Division Légère Mécanique" }
+			delete_unit_template_and_units = { division_template = "Brigade Coloniale" }
+		}
+		set_global_flag = FRA_revolution
+	}
+
+	option = { # Support Republicans
+		name = frevolution.69.a
+		trigger = { is_ai = no }
+		hidden_effect = {
+			FRA = {
+				load_oob = "FRA_revolution"
+				set_equipment_fraction = 0.4
+				set_stability = 0.2
+				set_war_support = 0.9
+				add_popularity = {
+					ideology = reactionism
+					popularity = 0.45
+				}
+				set_politics = {
+					ruling_party = reactionism
+					elections_allowed = no
+				}
+			}
+			FRR = { set_country_flag = FRR_civil_war }
+			FRR = {
+				declare_war_on = {
+					target = FRA
+					type = annex_everything
+				}
+			}
+			FRR = { change_tag_from = FRA }
+			news_event = { hours = 6 id = frevolution_news.1 }
+			FRR = { load_oob = "FRR_revolution" }
+			set_equipment_fraction = 0.6
+			set_stability = 0.1
+			set_war_support = 1.0
+			news_event = { id = france_prewar_news.3 }
+
+			#country_event = { id = spain.2 days = 7 }
+		}
+		custom_effect_tooltip = FRA_republicans_chosen
+	}
+	option = { # Support Monarchists
+		name = frevolution.69.b
+		hidden_effect = {
+			FRR = {
+				set_stability = 0.3
+				set_war_support = 0.8
+				load_oob = "FRR_revolution"
+			}
+			news_event = { hours = 6 id = frevolution_news.1 }
+			set_country_flag = civil_war
+			FRR = { set_country_flag = FRR_civil_war }
+
+			set_politics = {
+				ruling_party = reactionism
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = reactionism
+				popularity = 0.5
+			}
+
+			FRA = {
+				declare_war_on = {
+					target = FRR
+					type = annex_everything
+				}
+			}
+
+			news_event = { id = france_prewar_news.3 }
+
+			load_oob = "FRA_revolution"
+			set_stability = 0.3
+			set_war_support = 0.9
+
+			#country_event = { id = spain.3 days = 7 }
+		}
+		custom_effect_tooltip = FRA_monarchists_chosen
+	}
+}
+
+country_event = { #French Africa Breaks Away
+	id = frevolution.1
+	title = frevolution.1.t
+	desc = frevolution.1.d
+	picture = GFX_report_event
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = frevolution.1.a
+		add_war_support = -0.10
+		add_stability = 0.05
+		458 = { transfer_state_to = FRF }
+		459 = { transfer_state_to = FRF }
+		460 = { transfer_state_to = FRF }
+		513 = { transfer_state_to = FRF }
+		514 = { transfer_state_to = FRF }
+		515 = { transfer_state_to = FRF }
+		543 = { transfer_state_to = FRF }
+		549 = { transfer_state_to = FRF }
+		556 = { transfer_state_to = FRF }
+		660 = { transfer_state_to = FRF }
+		665 = { transfer_state_to = FRF }
+		708 = { transfer_state_to = FRF }
+		774 = { transfer_state_to = FRF }
+		775 = { transfer_state_to = FRF }
+		778 = { transfer_state_to = FRF }
+		780 = { transfer_state_to = FRF }
+		781 = { transfer_state_to = FRF }
+		782 = { transfer_state_to = FRF }
+		884 = { transfer_state_to = FRF }
+		885 = { transfer_state_to = FRF }
+		887 = { transfer_state_to = FRF }
+		898 = { transfer_state_to = FRF }
+		899 = { transfer_state_to = FRF }
+		news_event = { france_prewar_news.4 hours = 2 }
+	}
+}
+
+add_namespace = french_prewar
+
+country_event = { #French Elections
+	id = french_prewar.1
+	title = french_prewar.1.t
+	desc = french_prewar.1.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = { # The Republican Coalition Wins
+		name = french_prewar.1.a
+		trigger = { is_ai = no }
+		add_stability = -0.25
+		add_popularity = { ideology = labourism popularity = 0.04 }
+		add_popularity = { ideology = liberalism popularity = 0.03 }
+		set_country_flag = Election_republican_victory
+		retire_character = FRA_albert_lebrun
+		promote_character = FRA_maurice_thorez
+		set_politics = {
+   			ruling_party = liberalism
+    			elections_allowed = yes
+    			last_election = "1936.01.01"
+    			election_frequency = 60
+		}
+		news_event = { id = france_prewar_news.1 }
+	}
+	option = { # The Royalist Coalition Wins
+		name = french_prewar.1.b
+		add_stability = -0.20
+		add_popularity = { ideology = toryism popularity = 0.04 }
+		add_popularity = { ideology = reactionism popularity = 0.03 }
+		retire_character = FRA_albert_lebrun
+		promote_character = FRA_pierre_laval
+		set_country_flag = Election_royalist_victory
+		set_politics = {
+   			ruling_party = toryism
+    			elections_allowed = no
+    			last_election = "1936.01.01"
+    			election_frequency = 60
+		}
+		news_event = { id = france_prewar_news.2 }
+	}
+}
+
+country_event = { #Royalists Riot in the Streets
+	id = french_prewar.2a
+	title = french_prewar.2a.t
+	desc = french_prewar.2a.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = FRA
+		has_country_flag = Election_republican_victory
+		NOT = { has_country_flag = FRA_rioting_one }
+	}
+
+	mean_time_to_happen = {
+			days = 1
+	}
+
+	immediate = {
+		set_country_flag = FRA_rioting_one
+	}
+
+	option = { # Fuck
+		name = french_prewar.2a.a
+		trigger = { is_ai = no }
+		add_stability = -0.15
+		add_ideas = FRA_rioting
+	}
+}
+
+country_event = { #Republicans Riot in the Streets
+	id = french_prewar.3
+	title = french_prewar.3.t
+	desc = french_prewar.3.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = FRA
+		has_country_flag = Election_royalist_victory
+		NOT = { has_country_flag = FRA_rioting_two }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = FRA_rioting_two
+	}
+
+	option = { # Fuck
+		name = french_prewar.3.a
+		trigger = { is_ai = no }
+		add_stability = -0.15
+		add_ideas = FRA_rioting
+	}
+}
+
+country_event = { #Flavor: Antonin Artaud's premier film: 
+	id = french_prewar.4
+	title = french_prewar.4.t
+	desc = french_prewar.4.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = FRA
+		date > 1936.1.20
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+	}
+
+	option = { #Interesting...
+		name = french_prewar.4.a
+		trigger = { is_ai = no }
+	}
+}
+
+news_event = {
+	id = france_prewar_news.1 #Republicans Win
+	title = france_prewar_news.1.t
+	desc = france_prewar_news.1.d
+	picture = GFX_report_republicans_win
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = france_prewar_news.1.a
+	}
+}
+
+news_event = {
+	id = france_prewar_news.2 #Royalists win
+	title = france_prewar_news.2.t
+	desc = france_prewar_news.2.d
+	picture = GFX_report_royalists_win
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = france_prewar_news.2.a
+	}
+}
+
+news_event = {
+	id = france_prewar_news.3 #France erupts in civil war
+	title = france_prewar_news.3.t
+	desc = france_prewar_news.3.d
+	picture = GFX_report_french_civil_war
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = france_prewar_news.3.a
+	}
+}

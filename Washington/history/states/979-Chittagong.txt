@@ -1,0 +1,27 @@
+state={
+	id=979
+	name="STATE_979"
+	history={
+		add_core_of = BAN
+		owner = RAJ
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			11968 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = PAK
+		add_core_of = RAJ
+
+	}
+	provinces={
+		1075 7179 7634 9991 11968 12010 
+	}
+	manpower=10973300
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

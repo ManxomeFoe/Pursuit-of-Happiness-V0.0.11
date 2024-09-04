@@ -1,0 +1,44 @@
+ideas = {
+
+	country = {
+		french_protectorate = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = french_protectorate
+			modifier = {
+				conscription = 0.05
+				stability_factor = -0.10
+				army_org_factor = 0.05
+				extra_trade_to_target_factor = 0.10
+			}
+		}
+
+		RHI_ethnic_conflict = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = RHI_ethnic_conflict
+			modifier = {
+				stability_factor = -0.5
+				production_speed_buildings_factor = -0.10
+				
+			}
+		}
+
+	}
+}

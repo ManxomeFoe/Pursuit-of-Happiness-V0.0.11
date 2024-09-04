@@ -1,0 +1,147 @@
+ideas = {
+
+	country = {
+		disunited_society = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = GER_disunited_society
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.10
+			}
+		}
+		
+		german_general_staff = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = GER_general_staff
+			modifier = {
+				planning_speed = 0.25
+				army_org_factor = -0.10
+			}
+		}
+		
+		failing_british_investments = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = GER_failing_british_investments
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		constitutional_crisis = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = GER_constitutional_crisis
+			modifier = {
+				stability_factor = -0.10
+				stability_weekly = -0.05
+			}
+		}
+		
+		prussian_republican_crisis = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = GER_prussian_republican_crisis
+			modifier = {
+				stability_factor = -0.25
+				concription_factor = -0.45
+			}
+		}
+		
+		failed_german_experiment = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = GER_failed_german_experiment
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.10
+			}
+		}
+		
+		unstable_economy = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = GER_unstable_economy
+			modifier = {
+				stability_factor = -0.15
+				consumer_goods_factor = 0.10
+				industrial_capacity_factory = -0.10
+			}
+		}
+		
+		frankfurt_parliament = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = GER_frankfurt_parliament
+			modifier = {
+				stability_factor = -0.10
+			}
+		}
+	}
+}

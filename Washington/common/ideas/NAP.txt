@@ -1,0 +1,57 @@
+ideas = {
+
+	country = {
+		enemy_of_italy = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+				conscription_factor = -0.50
+			}
+		}
+		
+		brigantaggio = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+				production_speed_buildings_factor = -0.10
+			}
+		}
+		
+		NAP_failed_state = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.30
+			}
+		}
+	}
+}

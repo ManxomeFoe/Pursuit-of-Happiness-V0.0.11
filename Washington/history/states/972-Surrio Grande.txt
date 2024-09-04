@@ -1,0 +1,27 @@
+state={
+	id=972
+	name="STATE_972"
+	history={
+		add_core_of = NWS
+		owner = NWS
+		victory_points = {
+			10740 15 
+		}
+		victory_points = {
+			5061 5
+		}
+		victory_points = {
+			5038 5
+		}
+
+
+
+	}
+	provinces={
+		1954 2019 5038 5061 6785 6987 10740 10894 12369 12728 
+	}
+	manpower=1628421
+	buildings_max_level_factor=1.000
+	state_category = rural
+	local_supplies=0.000
+}

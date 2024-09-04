@@ -1,0 +1,32 @@
+
+state={
+	id=370
+	name="STATE_370"
+
+	history={
+		owner = DIX
+		victory_points = {
+			12735 1 
+		}
+		victory_points = {
+			10410 1 
+		}
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 3
+
+		}
+		add_core_of = DIX
+
+	}
+
+	provinces={
+		1587 4510 4594 4622 5059 7422 7464 8110 10192 10410 10753 11509 11717 12328 12429 12735 12803 
+	}
+	manpower=2009820
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

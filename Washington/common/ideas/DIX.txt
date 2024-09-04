@@ -1,0 +1,84 @@
+ideas = {
+
+	country = {
+		the_kings_dominion = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.20
+				recruitable_population = 0.20
+				war_support_factor = 0.10
+				political_power_factor = 0.30
+			}
+		}
+		
+		industrialized_sharecropping = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.10
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_arms_factory_factor = 0.10
+				stability_factor = -0.10
+				recruitable_population = -0.20
+			}
+		}
+		
+		invisible_empires = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.10
+				marxism_drift = 0.01
+				revivalism_drift = 0.01
+			}
+		}
+		
+		backbone_of_the_army = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_speed_factor = 0.10
+				army_org_factor = 0.10
+				land_doctrine_cost_factor = -0.10
+				planning_speed = 0.15
+			}
+		}
+	}
+}

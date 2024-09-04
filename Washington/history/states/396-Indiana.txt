@@ -1,0 +1,36 @@
+
+state={
+	id=396
+	name="STATE_396"
+
+	history={
+		owner = NEN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 5
+
+		}
+		add_core_of = NEN
+		victory_points = {
+			1595 5 
+		}
+		victory_points = {
+			7831 13 
+		}
+		victory_points = {
+			11635 10 
+		}
+		victory_points = {
+			720 5 
+		}
+
+	}
+
+	provinces={
+		720 954 1595 1604 1655 1881 4508 4527 4531 7551 7626 7831 9796 9810 10448 10457 11621 11635 12305 12437 12497 12697 
+	}
+	manpower=4238501
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

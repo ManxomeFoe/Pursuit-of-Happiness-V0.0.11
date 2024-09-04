@@ -1,0 +1,156 @@
+characters={
+	FRA_louis_xx={ #King of France
+		name="Louis XX"
+		portraits={
+			civilian={
+				large="GFX_portrait_FRA_louis_xx"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_louis_xx
+			available  = {
+			}
+			allowed  = {
+			}
+			traits  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		country_leader={
+			ideology=ancien_regime
+			traits={ ancien_regime }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	FRA_albert_lebrun={ #Starting PM of France
+		name="Albert Lebrun"
+		portraits={
+			civilian={
+				large="GFX_portrait_FRA_albert_lebrun"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_albert_lebrun
+			available  = {
+				has_government  = toryism
+			}
+			allowed  = {
+				has_government = toryism
+			}
+			traits  = {
+				devoted_civil_servant
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+
+		country_leader={
+			ideology=constitutionalism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	FRA_pierre_laval={ #Starting PM of France
+		name="Pierre Laval"
+		portraits={
+			civilian={
+				large="GFX_portrait_FRA_pierre_laval"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_pierre_laval
+			available  = {
+				has_government  = toryism
+			}
+			allowed  = {
+				has_government = toryism
+			}
+			traits  = {
+				devoted_civil_servant
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+
+		country_leader={
+			ideology=french_absolutist
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	FRA_maurice_thorez={
+			name="Maurice Thorez"
+			portraits={
+				civilian={
+					large="GFX_portrait_FRA_maurice_thorez"
+				}
+			}
+			advisor={
+				slot = political_advisor
+				idea_token = FRA_maurice_thorez
+				available  = {
+					has_government  = liberalism
+				}
+				allowed  = {
+					has_government = liberalism
+				}
+				traits  = {
+					liberal_populist
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+			}
+	
+			country_leader={
+				ideology=republicain
+				traits={ liberal_populist }
+				expire="1965.1.1.1"
+				id=-1
+			}
+	}
+
+	FRA_koenig={
+		name="Marie-Pierre Koenig"
+		portraits={
+			civilian={
+				large="GFX_portrait_FRA_koenig"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = FRA_koenig
+			available  = {
+				has_government  = liberalism
+			}
+			allowed  = {
+				has_government = liberalism
+			}
+			traits  = {
+				liberal_populist
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		country_leader={
+			ideology=french_revolutionary
+			traits={ marechal }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,103 @@
+ideas = {
+
+	country = {
+		NWS_jewel_of_the_empire = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = NWS_jewel_of_the_empire
+			modifier = {
+				stability_factor = 0.15
+				production_speed_buildings_factor = 0.05
+				political_power_gain = 0.20
+			}
+		}
+		
+		NWS_treaty_of_chapultepec = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = NWS_treaty_of_chapultepec
+			modifier = {
+				recruitable_population_factor = -0.5
+				stability_factor = -0.20
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+				training_time_factor = 0.10
+			}
+		}
+		
+		NWS_tejas_oil_boom = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = NWS_tejas_oil_boom
+			modifier = {
+				stability_factor = 0.10
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.05
+				production_speed_rail_way_factor = 0.10
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_fuel_silo_factor = 0.10
+			}
+		}
+		
+		NWS_disjointed_rail_network = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = NWS_disjointed_rail_network
+			modifier = {
+				consumer_goods_factor = 0.05
+				army_speed_factor = -0.05
+				attrition = 0.05
+			}
+		}
+		
+		NWS_norte = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = NWS_norte
+			modifier = {
+				war_support_factor = 0.10
+				stability_factor = -0.15
+			}
+		}
+	}
+}

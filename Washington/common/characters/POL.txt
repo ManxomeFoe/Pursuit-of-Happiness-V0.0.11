@@ -1,0 +1,30 @@
+characters = {
+	POL_szarlota={
+		name="Szarlota Czerwony"
+		portraits={
+			civilian={
+				large="GFX_portrait_POL_szarlota"
+			}
+		}
+		country_leader={
+			ideology=constitutionalism
+			traits={ unpopular_monarch }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	POL_edward_ochab={
+		name="Edward Ochab"
+		portraits={
+			civilian={
+				large="GFX_portrait_POL_edward_ochab"
+			}
+		}
+		country_leader={
+			ideology=polish_councilism
+			traits={ devout_communist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

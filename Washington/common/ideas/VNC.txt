@@ -1,0 +1,60 @@
+ideas = {
+
+	country = {
+		ITA_confederation_president = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = ITA_confederation_president
+			modifier = {
+				stability_factor = 0.20
+			}
+		}
+
+		
+		serene_republic = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = serene_republic
+			modifier = {
+				stability_factor = 0.15
+				drift_defense_factor = 0.50
+			}
+		}
+		
+		merchants_of_venice = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = merchants_of_venice
+			modifier = {
+				naval_speed_factor = 0.10
+				naval_morale = 0.10
+				navy_org_factor = 0.10
+				production_speed_dockyard_factor = 0.10
+				consumer_goods_factor = -0.10
+				production_speed_industrial_complex_factor = 0.10
+			}
+		}

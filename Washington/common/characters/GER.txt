@@ -1,0 +1,43 @@
+characters={
+	GER_wilhelm_II={ #German emperor
+		name="William II"
+		portraits={
+			civilian={
+				large="GFX_portrait_GER_wilhelm_II"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = GER_wilhelm_II
+			available  = {
+			}
+			allowed  = {
+			}
+			traits  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		country_leader={
+			ideology=traditionalist
+			traits={ traditionalist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	GER_transition_government={ #German transitional government
+		name="Republican Council"
+		portraits={
+			civilian={
+				large="GFX_portrait_GER_transition_government"
+			}
+		}
+		country_leader={
+			ideology=prussian_liberal
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}

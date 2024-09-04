@@ -1,0 +1,581 @@
+##### Division Templates #####
+division_template = {
+	name = "Division d'Infanterie"		
+	division_names_group = FRR_INF_01
+	# Represents: Division d'Infanterie (Series A and B), Div. d'Inf. de Forteresse
+	# Difference is their equipment
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 2x 155mm battalions
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Division Coloniale"		
+	division_names_group = FRR_COL_01
+	# Represents: Div. d'Inf. Coloniale, Div. d'Inf. Nord-Africaine
+	# Difference from DI is their equipment
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 2x 155mm battalions
+	}
+}
+division_template = {
+	name = "Division d'Infanterie Motorisée"	# Division d'Infanterie Motorisée
+	division_names_group = FRR_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }      # Recon Group consisted of 26 ACs + motorcycles
+		artillery = { x = 0 y = 1 }  # Heavy Arty Regiment had 1x 155mm, 1x 105mm battalions
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Division d'Infanterie Alpine"	# Division d'Infanterie Alpine
+	division_names_group = FRR_MNT_01
+	# Note: trimmed to 3x Rgts w/ arty bn added, 1939
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	# Regular mountain infantry (Infanterie Alpine)
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }	# Chasseurs Alpins (HOI3 elites)
+		mountaineers = { x = 2 y = 1 }	# Chasseurs Alpins (HOI3 elites)
+		mountaineers = { x = 2 y = 2 }	# Chasseurs Alpins (HOI3 elites)
+		mountaineers = { x = 3 y = 0 }	# Chasseurs Alpins (HOI3 elites)
+		mountaineers = { x = 3 y = 1 }	# Chasseurs Alpins (HOI3 elites)
+		mountaineers = { x = 3 y = 2 }	# Chasseurs Alpins (HOI3 elites)
+	}
+}
+division_template = {
+	name = "Division de Cavalerie" 	# Division de Cavalerie
+	division_names_group = FRR_CAV_01
+	# Note: Transformed to DLC, DLM divisions, 1936-39 
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # Recon Group consisted of 64 ACs/scout cars
+	}
+}
+division_template = {
+	name = "Division Légère Mécanique" 		# Division Légère Mécanique
+	division_names_group = FRR_MEC_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }		# Bn. of Hotchkiss, then Souma (Med.) tanks
+		light_armor = { x = 0 y = 1 }		# Bn. of Hotchkiss tanks
+		motorized = { x = 1 y = 0 }			# Brigade of 2x Rgts., 2 Bns. each (later 1 Rgt. of 3x Bns.)
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }      # Recon Group consisted of 42 ACs + motorcycles
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Brigade de Chars de Combat" 	# Brigade de Chars de Combat, independent armor brigades of 2x Rgts., 2 Bns. each
+	division_names_group = FRR_ARM_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Milice Royale Catholique"			# Represents: 2xRgt colonial forces and , usually with old equipment
+	division_names_group = FRR_MIL_01
+	is_locked = yes
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+##### OOB #####
+units = {
+	##### Northern France Region #####
+	# VIe Corps d'Armée (Région Militaire in 1936) -- Metz
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6547
+		division_template = "Division d'Infanterie" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9523
+		division_template = "Division d'Infanterie"	 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "1ère Garde Royale"
+		location = 9523
+		division_template = "Division d'Infanterie" 	
+		start_experience_factor = 1.0
+	}
+	division= {	
+		name = "2e Garde Royale"
+		location = 9523
+		division_template = "Division d'Infanterie" 		
+		start_experience_factor = 0.5
+	}
+	division= {	
+		name = "3e Garde Royale"
+		location = 9523
+		division_template = "Division d'Infanterie" 		
+		start_experience_factor = 0.2
+	}
+
+	# Xe Corps d'Armée (Région Militaire in 1936) -- Strassbourg
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3506
+		division_template = "Division d'Infanterie" 	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3506
+		division_template = "Milice Royale Catholique" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+
+	# XXe Corps d'Armée (Région Militaire in 1936) -- Nancy
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9725
+		division_template = "Milice Royale Catholique" 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3652
+		division_template = "Division d'Infanterie" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 680
+		division_template = "Milice Royale Catholique"	 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 3650
+		division_template = "Division d'Infanterie" 	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 6639
+		division_template = "Division d'Infanterie" 		
+		start_experience_factor = 0.2
+	}
+
+	# Ie Corps d'Armée (Région Militaire in 1936) -- Lille
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 6613
+		division_template = "Division d'Infanterie" 	# All motorized are frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "7ème Division d'Infanterie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 6613
+		division_template = "Milice Royale Catholique" 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+	}
+
+	# IIe Corps d'Armée (Région Militaire in 1936) -- Amiens
+	division= {	# "3ème Div. d'Infanterie Motorisée"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 6613
+		division_template = "Milice Royale Catholique" 	# All motorized are frontline, best equipment
+		start_experience_factor = 0.3
+	}
+
+	# IIIe Corps d'Armée (Région Militaire in 1936) -- Rouen
+	division= {	# "5ème Div. d'Infanterie Motorisée"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11716
+		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
+		start_experience_factor = 0.3
+	}
+
+	# XIIe Corps d'Armée (Région Militaire in 1936) -- Reims
+	division= {	# "12ème Div. d'Infanterie Motorisée"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 11716
+		division_template = "Division d'Infanterie" 	# All motorized are frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11877
+		division_template = "Division Légère Mécanique" 	# DLM is frontline, best equipment, L Arm = H-35
+		start_experience_factor = 0.3
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "FRA" } }
+	}
+
+	# IVe Corps d'Armée (Région Militaire in 1936) -- Le Mans
+	division= {	# "19ème Division d'Infanterie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 11877
+		division_template = "Division d'Infanterie" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+
+	# Ve Corps d'Armée (Région Militaire in 1936) -- Orleans
+	division= {	# "9ème Div. d'Infanterie Motorisée"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 9898
+		division_template = "Milice Royale Catholique" 	# All motorized are frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "1ère Division de Cavalerie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 9898
+		division_template = "Milice Royale Catholique" 	
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	# IXe Corps d'Armée (Région Militaire in 1936) -- Tours
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 9898
+		division_template = "Milice Royale Catholique" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 9710
+		division_template = "Milice Royale Catholique"	 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+
+	}
+
+	# XIe Corps d'Armée (Région Militaire in 1936) -- Nantes
+	division= {	# "16ème Division d'Infanterie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 9717
+		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 6657
+		division_template = "Division d'Infanterie" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 6657
+		division_template = "Division d'Infanterie" 		# R-35s
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+
+	# Région Militaire de Paris -- Paris
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 9495
+		division_template = "Milice Royale Catholique" 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3509
+		division_template = "Division d'Infanterie Motorisée" 	
+		start_experience_factor = 0.2
+
+	}
+	division= {	# "5ème Division de Cavalerie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 6766
+		division_template = "Milice Royale Catholique" 	
+		start_experience_factor = 0.2
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 6766
+		division_template = "Milice Royale Catholique" 		# R-35s
+		start_experience_factor = 0.2
+	}
+
+	# VIIe Corps d'Armée (Région Militaire in 1936) -- Besançon
+	division= {	# "6ème Division d'Infanterie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 512
+		division_template = "Milice Royale Catholique" 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+
+	}
+	division= {	# "13ème Division d'Infanterie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 512
+		division_template = "Milice Royale Catholique" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "14ème Division d'Infanterie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 3671
+		division_template = "Milice Royale Catholique" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 3671
+		division_template = "Milice Royale Catholique" 	
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 3671
+		division_template = "Milice Royale Catholique" 	# Second line, reserve equipment
+		start_experience_factor = 0.2
+
+	}
+
+	# Maginot Line -- Divisions d'Forteresse
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 3594
+		division_template = "Division d'Infanterie" 	# Garrison unit, reserve equipment
+		start_experience_factor = 0.1
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 3594
+		division_template = "Division d'Infanterie" 	# Garrison unit, reserve equipment
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "FRA"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+		industrial_manufacturer = mio:FRA_mas_organization
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "FRA" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "FRA" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+		industrial_manufacturer = mio:FRA_schneider_organization
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_2
+			creator = "FRA" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+		industrial_manufacturer = mio:FRA_renault_organization
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "FRA" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+		industrial_manufacturer = mio:FRA_somua_organization
+	}
+
+###################

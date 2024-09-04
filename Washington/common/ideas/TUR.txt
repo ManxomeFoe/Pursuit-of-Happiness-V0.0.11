@@ -1,0 +1,63 @@
+ideas = {
+
+	country = {
+		dead_man_of_europe = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.30
+				war_support_factor = = -0.30
+				political_power_gain = -0.30
+				production_speed_buildings_factor = -0.15
+				consumer_goods_factor = 0.15
+			}
+		}
+		
+		ottoman_army = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				training_time_factor = 0.10
+				army_org_factor = -0.10
+				army_attack_factor = -0.10
+				army_defense_factor = 0.05
+				army_morale_factor = -0.10
+			}
+		}
+		
+		arab_dawn = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.005
+			}
+		}		
+	}
+}

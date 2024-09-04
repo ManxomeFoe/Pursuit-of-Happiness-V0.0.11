@@ -1,0 +1,60 @@
+ideas = {
+
+	country = {
+		SWE_finnish_question = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = SWE_finnish_question
+			modifier = {
+				stability_factor = -0.20
+				political_power_cost = 0.20
+				conscription_factor = -0.1
+			}
+		}
+		
+		SWE_congo_trouble = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = SWE_congo_trouble
+			modifier = {
+				stability_factor = -0.05
+				resistance_growth = 0.10
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		SWE_parliament_vs_king = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = SWE_parliament_vs_king
+			modifier = {
+				stability_factor = -0.10
+				weekly_stability = -0.025
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+
+state={
+	id=358
+	name="STATE_358"
+	resources={
+		steel=13.000
+	}
+
+	history={
+		owner = NEN
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 7
+			dockyard = 3
+			air_base = 10
+
+		}
+		add_core_of = NEN
+		victory_points = {
+			9708 5
+		}
+		victory_points = {
+			9693 10
+		}
+
+	}
+
+	provinces={
+		598 1436 3602 3702 3747 3806 6717 6778 6795 6916 9673 9693 9708 9721 9754 10381 11650 11660 11662 11665 11722 13157 
+	}
+	manpower=4588061
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
+}

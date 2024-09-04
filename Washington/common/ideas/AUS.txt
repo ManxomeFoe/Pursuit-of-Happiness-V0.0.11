@@ -1,0 +1,58 @@
+ideas = {
+
+	country = {
+		holy_roman_emperor = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.3
+				drift_defence_factor = 0.1
+			}
+		}
+		
+		ostverlust = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.25
+				stability_factor = -0.20
+			}
+		}
+		
+		slavic_question = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.10
+			}
+		}
+	}
+}

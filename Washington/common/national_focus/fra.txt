@@ -1,0 +1,196 @@
+focus_tree = {
+	id = FRA
+	continuous_focus_position = { x = 150 y = 2740 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	#1,000 More Years of the Capets
+	focus = {
+		id = FRA_1000moreyearsofthecapets
+		icon = GFX_FRA_royalists_win
+		x = 9
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		bypass = {
+			has_country_flag = Election_royalist_victory
+		}
+		available = {
+			NOT = { has_country_flag = Election_republican_victory }
+		}
+		prerequisite = { focus = FRA_the_general_election  }
+		mutually_exclusive = { focus = FRA_republican_victory  }
+	}
+
+	#The Election of Our Lifetime
+	focus = {
+		id = FRA_the_general_election
+		icon = GFX_FRA_the_general_election
+		x = 7
+		y = 3
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			country_event = { id = french_prewar.1 }
+		}	
+	}
+
+	#The Republicans Win!
+	focus = {
+		id = FRA_republican_victory
+		icon = GFX_FRA_republican_victory
+		x = 5
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+			NOT = { has_country_flag = Election_royalist_victory }
+		}
+		bypass = {
+			has_country_flag = Election_republican_victory
+		}
+		prerequisite = { focus = FRA_the_general_election  }
+	}
+
+	#Investigate the Army of France
+	focus = {
+		id = FRA_investigate_the_army_of_france
+		icon = GFX_FRA_investigate_the_army_of_france
+		x = 9
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_1000moreyearsofthecapets  }
+	}
+
+	#Rally the Third Estate
+	focus = {
+		id = FRA_rally_the_third_estate
+		icon = GFX_FRA_rally_the_third_estate
+		x = 5
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_republican_victory  }
+	}
+
+	#Oath at Menilmontant Bakery
+	focus = {
+		id = FRA_oath_at_menilmontant_bakery
+		icon = GFX_FRA_oath_at_menilmontant_bakery
+		x = 5
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_rally_the_third_estate  }
+	}
+
+	#Appeal to the Ranks
+	focus = {
+		id = FRA_appeal_to_the_ranks
+		icon = GFX_FRA_appeal_to_the_ranks
+		x = 4
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_oath_at_menilmontant_bakery  }
+	}
+
+	#Appeal to the Masses
+	focus = {
+		id = FRA_appeal_to_the_masses
+		icon = GFX_FRA_appeal_to_the_masses
+		x = 6
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_oath_at_menilmontant_bakery  }
+		mutually_exclusive = { focus = FRA_appeal_to_the_ranks  }
+	}
+
+	#Instate a Loyalty Oath to the King
+	focus = {
+		id = FRA_instate_a_loyalty_oath_to_the_king
+		icon = GFX_FRA_instate_a_loyalty_oath_to_the_king
+		x = 9
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_investigate_the_army_of_france  }
+	}
+
+	#Assemble the Paramilitaries
+	focus = {
+		id = FRA_form_revolutionary_army
+		icon = GFX_FRA_form_revolutionary_army
+		x = 5
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_appeal_to_the_ranks  focus = FRA_appeal_to_the_masses  }
+	}
+
+	#Metropole Army
+	focus = {
+		id = FRA_metropole_army
+		icon = GFX_FRA_metropole_army
+		x = 8
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_instate_a_loyalty_oath_to_the_king  }
+	}
+
+	#The African Veterans
+	focus = {
+		id = FRA_the_african_veterans
+		icon = GFX_FRA_the_african_veterans
+		x = 10
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_instate_a_loyalty_oath_to_the_king  }
+		mutually_exclusive = { focus = FRA_metropole_army  }
+	}
+
+	#The Catholic Army
+	focus = {
+		id = FRA_the_catholic_army
+		icon = GFX_FRA_the_catholic_army
+		x = 9
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_metropole_army  focus = FRA_the_african_veterans  }
+	}
+}

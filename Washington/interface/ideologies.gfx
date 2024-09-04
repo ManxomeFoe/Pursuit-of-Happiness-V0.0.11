@@ -1,0 +1,88 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ideology_italianunionist"
+		texturefile = "gfx/interface/ideologies/italianunionist.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_italian_labourism"
+		texturefile = "gfx/interface/ideologies/italian_labourism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_anti_italian"
+		texturefile = "gfx/interface/ideologies/anti_italian.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_polish_councilism"
+		texturefile = "gfx/interface/ideologies/polish_councilism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_new_english_toryism"
+		texturefile = "gfx/interface/ideologies/new_english_toryism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_southern_toryism"
+		texturefile = "gfx/interface/ideologies/southern_toryism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_curzonism"
+		texturefile = "gfx/interface/ideologies/curzonism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_papal_theocratism"
+		texturefile = "gfx/interface/ideologies/papal_theocratism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_russian_absolutism"
+		texturefile = "gfx/interface/ideologies/russian_absolutism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_obliterationism"
+		texturefile = "gfx/interface/ideologies/obliterationism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_militarism"
+		texturefile = "gfx/interface/ideologies/militarism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_danish_monarchy"
+		texturefile = "gfx/interface/ideologies/danish_monarchy.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_swedish_monarchy"
+		texturefile = "gfx/interface/ideologies/russian_absolutism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_kunism"
+		texturefile = "gfx/interface/ideologies/kunism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_edoism"
+		texturefile = "gfx/interface/ideologies/edoism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_francoist"
+		texturefile = "gfx/interface/ideologies/francoist.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_orangism"
+		texturefile = "gfx/interface/ideologies/orangism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_republicain"
+		texturefile = "gfx/interface/ideologies/republicain.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_french_absolutist"
+		texturefile = "gfx/interface/ideologies/french_absolutist.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_ancien_regime"
+		texturefile = "gfx/interface/ideologies/french_absolutist.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_french_revolutionary"
+		texturefile = "gfx/interface/ideologies/republicain.dds"
+	}
+}
+	

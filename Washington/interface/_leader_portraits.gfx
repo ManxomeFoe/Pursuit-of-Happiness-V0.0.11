@@ -1,0 +1,42 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_FRA_albert_lebrun"
+		texturefile = "gfx/leaders/FRA/albert_leburn.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FRA_louis_xx"
+		texturefile = "gfx/leaders/FRA/louis_xx.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FRA_maurice_thorez"
+		texturefile = "gfx/leaders/FRA/maurice_thorez.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FRA_pierre_laval"
+		texturefile = "gfx/leaders/FRA/pierre_laval.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_POL_szarlota"
+		texturefile = "gfx/leaders/POL/szarlota.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_POL_edward_ochab"
+		texturefile = "gfx/leaders/POL/edward_ochab.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FRA_koenig"
+		texturefile = "gfx/leaders/FRR/koenig.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PRE_otto_wels"
+		texturefile = "gfx/leaders/PRE/otto_wels.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_GER_transition_government"
+		texturefile = "gfx/leaders/GER/transition_government.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_GER_wilhelm_II"
+		texturefile = "gfx/leaders/GER/wilhelm_II.dds"
+	}
+}

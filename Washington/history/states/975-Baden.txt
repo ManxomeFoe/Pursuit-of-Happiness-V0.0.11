@@ -1,0 +1,18 @@
+state={
+	id=975
+	name="STATE_975"
+	history={
+		owner = BAD
+		add_core_of = BAD
+		victory_points = {
+			3530 15
+		}
+	}
+	provinces={
+		3530 3679 3692 6542 6568 6581 6712 6934 11640 
+	}
+	manpower=2381079
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=rural
+}

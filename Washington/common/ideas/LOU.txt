@@ -1,0 +1,59 @@
+ideas = {
+
+	country = {
+		political_abomination = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.20
+				political_advisor_cost_factor = 0.50
+			}
+		}
+		
+		fluid_borders = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+				monthly_population = 0.10
+			}
+		}
+		
+		blue_socialism = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.10
+				industrial_capacity_factory = 0.10
+				consumer_goods_factor = -0.30
+			}
+		}
+	}
+}

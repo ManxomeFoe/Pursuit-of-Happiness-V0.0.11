@@ -1,0 +1,77 @@
+ideas = {
+
+	country = {
+		old_tyrants_will = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.3
+				conscription_factor = 0.045
+			}
+		}
+		
+		diversity_is_our_strength = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.10
+				resistance_growth_on_our_occupied_states = 0.10
+			}
+		}
+		
+		bear_of_the_north = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.20
+				industrial_capacity_factory = -0.10
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		
+		cracks_in_the_ice = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.20
+			}
+		}
+	}
+}

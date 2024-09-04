@@ -1,0 +1,17 @@
+state={
+	id=998
+	name="STATE_998"
+	provinces={
+		3773 3976 6790 9752 
+	}
+	history={
+		owner = PAR
+		add_core_of = PAR
+		add_core_of = ITA
+	}
+
+	manpower=1201290
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=large_city
+}
